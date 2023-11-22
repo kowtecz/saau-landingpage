@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
 * {
   margin: 0;
@@ -19,9 +18,14 @@ variaveis globais
   --secondary-color: #9539f1;
   --white-color: #fff;
 }
-
-
-
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
 html,
 body {
   background: var(--white-color);
@@ -693,9 +697,9 @@ home Sobre
 
 .section-overlay {
   background-image: linear-gradient(
-    15deg,
-    rgba(19, 76, 122, 0.247) 0%,
-    #c1d08093 100%
+    25deg,
+    rgba(19, 76, 122, 0.247) 10%,
+    #000000 90%
   );
   position: absolute;
   top: 0;

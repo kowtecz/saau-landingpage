@@ -51,17 +51,18 @@
 	        })
 	        $(this).addClass('active');
 	      
-	        var target = this.hash,
-	        menu = target;
-	       	var target = $(this.hash);
+	        var target = this.hash;
+	       	var targetElement = $(target);
 	        $('html, body').stop().animate({
-	            scrollTop: (target.offset().top) - 130
+	            scrollTop: (targetElement.offset().top) - 130
 	        }, 500, 'swing', function () {
 	            window.location.hash = target;
 	            $(document).on("scroll", onScroll);
 	        });
 	    });
 	});
+
+
 
 	function onScroll(event){
 	    var scrollPos = $(document).scrollTop();
